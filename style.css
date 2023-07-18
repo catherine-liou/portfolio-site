@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@700&display=swap');
+
+
+nav {
+    font-family: 'Raleway', sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 5.5rem;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    background-color: #ffffff;
+    opacity: 0.8;
+}
+
+#logo{
+    padding: 0rem 1rem;
+}
+
+#nav-bar{
+    display: flex;   
+    padding-right: 2rem; 
+}
+
+.nav-bar-button{
+    padding: 0.5rem 1.5rem;
+    text-decoration: none;
+}
+
+#book-button{
+    border: black solid 1.5px;
+}
+
+.circles{
+    border: 2px solid black;
+    border-radius: 22px;
+    display: inline-block;
+    height: 10px;
+    padding-top: 2px;
+    margin: 0px 5px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 10px;
+}
+
+body{
+    font-family: 'Raleway', sans-serif;
+}
+
+#homepage-section-1{
+    background-image: url(./images/hotel_front.jpeg);
+    width: 100%;
+    height: 40rem;
+    position: relative;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 25px;
+    color: #EFF0F2;
+}
+
