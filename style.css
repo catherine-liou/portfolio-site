@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300&display=swap');
 
-
+/* Nav Bar Styling */
 nav {
     font-family: 'Raleway', sans-serif;
     display: flex;
@@ -12,12 +14,27 @@ nav {
     width: 100%;
     position: absolute;
     z-index: 1;
+}
+
+nav:hover{
     background-color: #ffffff;
-    opacity: 0.8;
+    opacity: 0.6;
 }
 
 #logo{
-    padding: 0rem 1rem;
+    padding: 0rem 0.1rem;
+    font-family: 'Montserrat Alternates', sans-serif;    
+}
+
+#logo-photo{
+    display: flex;
+    align-items: center;
+}
+
+#bnb-logo{
+    height: 2rem;
+    display: flex;
+    padding-left: 1rem;
 }
 
 #nav-bar{
@@ -34,16 +51,22 @@ nav {
     border: black solid 1.5px;
 }
 
-.circles{
-    border: 2px solid black;
-    border-radius: 22px;
-    display: inline-block;
-    height: 10px;
-    padding-top: 2px;
-    margin: 0px 5px;
-    text-align: center;
-    text-transform: uppercase;
-    width: 10px;
+/* Styling for background photo and the body */
+html {
+    scroll-behavior: smooth;
+   }
+   
+.homepage-background-button{
+    border: 0.5px solid white;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 15px;
+    margin-left: 10px;
+    height: 18px;
+    width: 18px;
+    font-size: 10px;
+    align-items: center;
+    background-color: transparent;
 }
 
 body{
@@ -51,16 +74,411 @@ body{
 }
 
 #homepage-section-1{
-    background-image: url(./images/hotel_front.jpeg);
+    background-image: url(./images/room_3_bedroom.jpeg);
     width: 100%;
-    height: 40rem;
+    height: 43rem;
     position: relative;
     background-size: cover;
     background-position: center center;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+    justify-content: center;
     font-size: 25px;
     color: #EFF0F2;
 }
+
+.homepage-background-button:hover{
+    cursor: pointer;
+}
+
+/* Styling for background photo and the body */
+hr{
+    background-color: #DDDDDD;
+    border: #DDDDDD 0.5px solid;
+    width: 80%;
+}
+
+#homepage-section-2{
+    font-size: 12px;
+    margin: 50px;
+    text-align: center;
+    line-height: 20px;
+}
+
+#our-promise{
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+#hotel-description{
+    margin: 30px
+}
+
+#homepage-section-2-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    margin-bottom: 5rem;
+}
+
+.homepage-section-2-photos{
+    height: 20rem;
+    position: relative;
+    background-size: cover;
+    background-position: center center;
+    margin: 0rem 0.5rem;
+}
+
+.homepage-section-2-photos-caption{
+    text-align: center;
+    margin-top: 0.5rem;
+}
+
+#homepage-section-2-photo1{
+    background-image: url(./images/horse\ riding.jpeg);
+}
+
+#homepage-section-2-photo2{
+    background-image: url(./images/lake.jpeg);
+}
+
+#homepage-section-2-photo3{
+    background-image: url(./images/trail\ walking.jpeg);
+}
+
+
+/* Styling for the descriptions and background photo of the rooms*/
+#homepage-section-3-room-description{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #1D1E20;
+    color: white;
+    padding: 3rem 15rem 2rem 15rem;
+    font-size: 12px;
+}
+
+.room-description{
+    text-align: end;
+    height: 60px;
+}
+
+#homepage-section-3-grid-suite{
+    font-size: 30px;
+}
+
+#homepage-section-3-review{
+    margin: 1rem 0rem;
+}
+
+#homepage-section-3-hold{
+    height: 3.4rem;
+}
+
+ul{
+    margin: 0;
+}
+
+.icons{
+    display: flex;
+    list-style-type: none;
+}
+
+.homepage-section-3-icons{
+    height: 16px;
+    padding-right: 5px;
+}
+
+#homepage-section-3-room-photo{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: #1D1E20;
+    padding: 0rem 1rem;
+    color: white;
+    font-size: 12px;
+}
+
+.homepage-section-3-grid-photo{
+    padding: 0.5rem 0.5rem 5rem 0.5rem;
+}
+
+.homepage-section-3-photo{
+    height: 26rem;
+    position: relative;
+    background-size: cover;
+    background-position: center center;
+    margin-bottom: 1rem;
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.homepage-room-photos-caption{
+    padding: 1rem 1rem;
+    font-size: 18px;
+}
+
+.room-button-class{
+    padding: 0rem 0.5rem;
+    font-family: 'Manrope', sans-serif;
+    font-size: 50px;
+    color: black;
+}
+
+#homepage-section-3-photo1{
+    background-image: url(./images/room_1_bedroom.jpeg);
+}
+
+#homepage-section-3-photo2{
+    background-image: url(./images/room_2_bedroom.jpeg);
+}
+
+#homepage-section-3-photo3{
+    background-image: url(./images/room_3_bedroom.jpeg);
+}
+
+#room-1-button:hover{
+    background-color: #ffffff;
+    opacity: 0.6;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+#room-2-button:hover{
+    background-color: #ffffff;
+    opacity: 0.6;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+#room-3-button:hover{
+    background-color: #ffffff;
+    opacity: 0.6;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+/* Styling of the Experiences Styling of the Page */
+#homepage-section-4-experiences{
+    color: #737373;
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 10rem;
+    line-height: 22px;
+    font-size: 13px;
+}
+
+#section-4-experience-restaurant{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    margin-left: 5rem;
+}
+
+#section-4-experience{
+    padding-top: 2rem;
+}
+
+.section-4-experience-description{
+    padding-bottom: 1.5rem;
+    padding-right: 2rem;
+}
+
+/* Styling for the carousel movement of the background photo for the restaurant */
+#section-4-restaurant{
+    animation: mover 15s ease-in-out infinite;   
+    height: 26rem;
+    width: 75%;
+    position: relative;
+    background-size: cover;
+    background-position: center center;
+}
+
+@keyframes mover{
+    0%,12.5%,100% {
+        background-image: url(./images/hotel_restaurant_food_1.jpeg);
+    }
+
+    25%,37.5%{
+        background-image: url(./images/hotel_restaurant_1.jpeg);   
+    }
+
+    50%,62.5%{
+        background-image: url(./images/hotel_restaurant_food_2.jpeg);
+    }
+
+    75%,87.5% {
+        background-image: url(./images/hotel_restaurant_2.jpeg);
+    }
+}
+
+/* Styling for the spa section */
+#section-4-spa{
+    background-image: url(./images/hotel_spa_1.jpeg);
+    height: 28rem;
+    position: relative;
+    background-size: cover;
+    background-position: center center;
+    margin: 5rem 2rem 0rem 0rem;
+}
+
+#section-4-experience-spa{
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+}
+
+.section-4-spa-description{
+    margin-bottom: 1rem;
+    margin-right: 7rem;
+}
+
+/* Styling for the footer section */
+footer{
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    background-color: black;
+    margin-top: 5rem;
+    font-size: 13px;
+    padding: 5rem 10rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.footer-header{
+    font-size: 30px;
+}
+
+#contact-details-grid{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.align-right-footer{
+    text-align: end;
+    padding-right: 2rem;
+}
+
+.footer-details{
+    margin: 0.4rem 0rem;
+}
+
+#footer-newsletter-description{
+   margin-bottom: 2.5rem;
+}
+
+#email{
+    padding: 1.2rem;
+}
+
+#register-button{
+    font-size: 19px;
+    font-weight: bold;
+    border: white solid 1px;
+    padding: 1rem 2rem;
+    margin-left: 0.5rem;
+    transition: 0.2s ease;
+}
+
+#register-button:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+  }
+
+/* Mobile responsive */
+@media (max-width: 600px) {
+    .logo{
+        font-size: 14px;
+    }
+
+    .nav-bar-button{
+        font-size: 12px;
+        padding: 0.2rem 0.4rem;
+    }
+    
+    #homepage-section-2-grid{
+        grid-template-columns: 1fr;
+        margin: 0rem 1rem 2rem 1rem;
+    }    
+
+    .homepage-section-2-photos-caption{
+        margin-bottom: 1rem;
+    }
+
+    #homepage-section-3-room-description{
+        grid-template-columns: 1fr;
+        padding: 2rem 6rem;
+    }
+
+    #homepage-section-3-room-photo{
+        grid-template-columns: 1fr;
+    }
+
+    .homepage-section-3-grid-photo{
+        padding-bottom: 2rem;
+    }
+
+    .room-photos-ul{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #homepage-section-3-hold{
+        height: 10px;
+    }
+
+    .room-description{
+        text-align: center;
+    }
+
+    #homepage-section-4-experiences{
+        color: #737373;
+        margin-top: 0rem;
+        grid-template-columns: 1fr;
+        margin-left: 0.2rem;
+    }
+
+    #section-4-experience{
+        text-align: center;
+        margin: 0rem;
+        padding-top: 3rem;
+    }
+
+    #section-4-experience-restaurant{
+        margin: 0rem;
+    }
+
+    #section-4-restaurant{
+        width: 100%;
+    }
+
+    #section-4-spa{
+        width: 100%
+    }
+
+    #section-4-experience-spa{
+        margin: 1rem;
+    }
+
+    .section-4-spa-description{
+        margin: 0px;
+    }
+
+    footer{
+        margin-top: 5rem;
+        padding: 1.5rem 1rem;
+        grid-template-columns: 1fr;
+    }
+  }
+
+
+
+
 
